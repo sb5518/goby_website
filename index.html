@@ -9,8 +9,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
   <link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
+  <!-- Link Swiper's CSS -->
+   <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
   <link rel="icon" href="img/favicon.png">
 </head>
+
 <body>
   <header class='main-header'>
     <div class="container">
@@ -88,6 +94,120 @@
 
   <section class="padding-block-700 block-light-bg">
     <h1>Projects</h1>
+
+    <div class="swiper proj-swiper">
+      <div class="swiper-wrapper">
+        
+        <div class="swiper-slide">
+          <div class="swiper-card">
+            <img src="img/owners_logo.png" alt="">
+            <div class='tag'>
+              <span>DATA VISUALIZATION</span>
+            </div>
+            <h3>Owners</h3>
+            <p>Spatial Geo-Data Visualization and Aggregation Engine</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="swiper-card">
+            <img src="img/evernia.png" alt="">
+            <div class='tag'>
+              <span>SMART AG</span>
+            </div>
+            <h3>Evernia Bio</h3>
+            <p>Soil microbial characterization solution based on computer vision and microscopy</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="swiper-card">
+            <img src="img/7chord.png" alt="">
+            <div class='tag'>
+              <span>FINTECH</span>
+            </div>
+            <h3>7 Chord LLC</h3>
+            <p>Data strategy for bond predictive pricing & trend forecasting apps</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="swiper-card">
+            <img src="img/sightwalk.png" alt="">
+            <div class='tag'>
+              <span>DATA VISUALIZATION</span>
+            </div>
+            <h3>Sightwalk</h3>
+            <p>Alternative routing app for city strolling</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="swiper-card">
+            <img src="img/liveperson.png" alt="">
+            <div class='tag'>
+              <span>ENTERPRISE SOFTWARE</span>
+            </div>
+            <h3>Liveperson</h3>
+            <p>HR Analytics. Performance - Hiring</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="swiper-card">
+            <img src="img/spliff.png" alt="">
+            <div class='tag'>
+              <span>MUSIC TECH</span>
+            </div>
+            <h3>SPLIFF</h3>
+            <p>Set list planner for DJs</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".proj-swiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        // Responsive breakpoints   
+        breakpoints: {  
+          // when window width is <= 320px     
+          320: {       
+             slidesPerView: 1,
+          },
+          1150: {       
+             slidesPerView: 2,
+          },     
+          1450: {       
+             slidesPerView: 3,       
+          },
+          1750: {       
+             slidesPerView: 4,       
+          },   
+        } 
+
+      });
+    </script>
   </section>
 
   <section class="padding-block-700 block-dark-bg">
@@ -115,7 +235,7 @@
   </section>
 
 
-  <footer class='padding-block-700'>
+  <footer class='padding-block-60'>
     <div>
       <a class="logo" href="#">GOBY Lab</a>
     </div>

@@ -152,6 +152,11 @@ header {
   color: var(--clr-heading);
 }
 
+hr {
+  color: var(--clr-neutral-400);
+  margin-bottom: var(--size-400);
+}
+
 .main-header {
   background-image: url('../img/bg-server-transparent.png');
   background-repeat: no-repeat;
@@ -165,6 +170,14 @@ header {
   background-position: bottom center;
   background-size: 100%;
   padding-bottom: var(--size-1500);
+}
+
+.tertiary-header {
+  background-image: url('../img/bg-looper.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100%;
+  padding-bottom: var(--size-800);
 }
 
 section {
@@ -269,6 +282,12 @@ footer {
   font-size: var(--fs-main-title);
   font-weight: var(--fw-extra-bold);
 }
+.secondary-header-container p {
+  font-weight: var(--fw-semi-bold);
+  padding-left: var(--size-2000);
+  padding-right: var(--size-2000);
+  padding-bottom: var(--size-200);
+}
 
 .cards-container {
   margin-top: 30px;
@@ -327,25 +346,12 @@ footer {
   outline: 0;
 }
 
-/*
-  --clr-logo: var(--clr-neutral-100);
-  --clr-heading: var(--clr-neutral-100);
-  --clr-body-title: var(--clr-accent-800);
-  --clr-body: var(--clr-neutral-600);
-  --clr-footer: var(--clr-neutral-600);
-  --clr-tags: var(--clr-accent-500);
-*/
-
 .padding-block-700 {
   padding-block: var(--size-700);
-  /*padding-right: 326px;
-  padding-left: 326px;*/
   text-align: center;
 }
 .padding-block-600 {
   padding-block: var(--size-600);
-  /*padding-right: 326px;
-  padding-left: 326px;*/
   text-align: center;
 }
 
@@ -382,6 +388,7 @@ footer {
   background: var(--clr-neutral-100);
   text-align: left;
   align-items: center;
+  align-content: center;
   padding: var(--size-600) var(--size-750);
   box-shadow: 0px -12px 0px #93B5FF, 0px 34px 73px rgba(21, 74, 188, 0.05);
   margin-bottom: var(--size-650);
@@ -390,16 +397,22 @@ footer {
 .project-card {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  column-gap: var(--size-700);
+  column-gap: var(--size-600);
 }
 .project-card *{
   padding-bottom: var(--size-200);
 }
+
 .project-card p{
   padding-bottom: 0;
+  margin-bottom: 1em;
 }
+
 .project-card img{
-  padding-bottom:z 0;
+  display: block;
+  margin: auto;
+  text-align: start;
+  padding-bottom: 0;
 }
 .project-card h2 {
   font-size: var(--fs-600);
@@ -411,15 +424,108 @@ footer {
   line-height: 160%;
 }
 
-
 .tag span {
   color: var(--clr-tags);
-  font-size: var(--fs-300);
-  font-weight: var(--fw-extra-bold);
+  font-size: var(--fs-tag);
+  font-weight: var(--fw-bold);
   padding: 11px 14px;
   background: rgba(21, 74, 188, 0.1);
   border-radius: 10000px;
 }
+
+.bio-text p:first-of-type{
+  font-weight: var(--fw-bold);
+  color: var(--clr-);
+}
+
+.service-box {
+  text-align: left;
+  align-items: center;
+}
+.service-box img{
+  display: block;
+  margin: auto;
+}
+.service-box p {
+  display: block;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.service-box p:first-of-type {
+  margin-bottom: 20px;
+}
+.service-box h1 h2 {
+  margin-bottom: 40px;
+}
+
+.service-box-left {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  column-gap: var(--size-600);
+}
+
+.service-box-right {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  column-gap: var(--size-600);
+}
+
+/* Swipper */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.proj-swiper {
+  margin-top: 30px;
+  display: grid;
+}
+
+.swiper-slide {
+  text-align: left;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  padding: var(--size-600);
+  /*-webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;*/
+}
+
+.swiper-card {
+  align-items: end;
+  align-content: end;
+}
+.swiper-card .tag{
+  margin-bottom: 35px;
+  size: var(--fs-200);
+
+}
+.swiper-card h3 {
+  margin-bottom: 18px;
+}
+
+.swiper-card img {
+  height: 201px;
+  /*width: 378px;*/
+  /*display: block;*/
+  /*margin: auto;*/
+  /*width: 100%;*/
+  /*height: 100%;*/
+  object-fit: scale-down;
+  margin-bottom: 41px;
+}
+
 
 @media (max-width: 75em) {
   .nav-wrapper {
@@ -430,17 +536,14 @@ footer {
     grid-template-columns: 1fr;
     row-gap: var(--size-400);
   }
-
   .contact-container {
     grid-template-columns: 1fr;
     row-gap:: var(--size-700);
   }
-
   .project-card {
     grid-template-columns: 1fr;
-    row-gap: var(--size-700);
+    row-gap: var(--size-200);
   }
-
 }
 @media (max-width: 60em) {
     header {
