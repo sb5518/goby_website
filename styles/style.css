@@ -370,7 +370,7 @@ footer {
   letter-spacing: 0.125em;
 }
 
-.projects-card-container {
+.card-container {
   margin-top: calc(-1 * var(--size-900));
 }
 
