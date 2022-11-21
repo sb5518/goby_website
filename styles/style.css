@@ -147,7 +147,7 @@ header {
   color: var(--clr-heading);
   background-image: url('../img/bg-server-transparent.png');
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: center right;
   background-size: 65%;
 }
 
@@ -346,9 +346,29 @@ form {
     display: grid;
     row-gap: 20px;
   }
+  .cards-container {
+    margin-top: 30px;
+    margin-bottom: 63px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: var(--size-400);
+    /*column-gap: var(--size-400);*/
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    row-gap:: var(--size-700);
+  }
+
+}
+@media (max-width: 60em) {
+    header {
+    background-image: none;
+  }
 }
 @media (max-width: 50em) {
   .nav-list {
     display: grid;
   }
 }
+
