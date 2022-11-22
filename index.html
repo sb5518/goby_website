@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>GOBY Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <!-- Link Swiper's CSS -->
+   <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  <link rel="icon" href="img/favicon.png">
+</head>
+
+<body>
+  <header class='main-header'>
+    <div class="container">
+      <div class="nav-wrapper">
+        <a class="logo" href="#">GOBY Lab</a>
+        <nav class="primary-navigation">
+          <ul aria-label="Primary" role="list" class="nav-list">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">PROJECTS</a></li>
+          </ul>
+          <button class="button button-secondary">CONTACT US</button>
+        </nav>
+
+      </div>
+    </div>
+
+    <div class="header-container">
+      <div id='item1'>
+        <h1>Machine Learning Innovation Lab</h1>
+        <p>
+          Goby builds upon the latest ML/DL research to provide strategic & innovative business solutions. We partner with our clients to envision, prototype & build custom data-driven software to unlock the full potential of their data.
+          We are a Team of problem-solvers, data scientists, machine learning researchers, and engineers who love working on complex problems
+        </p>
+        <h3>
+          CORE VALUES
+        </h3>
+        <p>
+          Quality / Performance / Communication / Strategic thinking / Innovation / Curiosity
+        </p>
+      </div>
+      <div id='item2'></div>
+    </div>
+  </header>
+
+  <section class='padding-block-700 block-dark-bg'>
+    <h1>
+      Services
+    </h1>
+    <p>
+      We work with our partners through our iterative innovation process with focus on creating custom high-quality software that generates value for their business at each step, while building long lasting relationships.
+    </p>
+    <div class='cards-container'>
+      <div class='service-card'>
+        <img src="img/magnifier.png" alt="Discovery">
+        <h3>Discovery</h3>
+        <p>
+          Get to know your business, and identify innovation opportunities.
+        </p>
+      </div>
+      <div class='service-card'>
+        <img src="img/proof_of_concept.png" alt="Proof of Concept">
+        <h3>Proof of Concept</h3>
+        <p>
+          Research and development of MVPs.
+          Hypothesis validation.
+          Development roadmap.
+        </p>
+      </div>
+      <div class='service-card'>
+        <img src="img/rocket.png" alt="Deployment">
+        <h3>Deployment</h3>
+        <p>
+          Integrate the innovations in your infrastructure and productivize.
+        </p>
+      </div>
+    </div>
+    <div class='ctr-button-container'>
+      <button class='button button-primary'>
+        LEARN MORE
+      </button>
+    </div>
+  </section>
+
+  <section class="padding-block-700 block-light-bg">
+    <h1>Projects</h1>
+
+    <div class="swiper proj-swiper">
+      <div class="swiper-wrapper">        
+        <div class="swiper-slide">
+          <div class="swiper-card">
+            <img src="img/owners_logo.png" alt="">
+            <div class='tag'>
+              <span>DATA VISUALIZATION</span>
+            </div>
+            <h3>Owners</h3>
+            <p>Spatial Geo-Data Visualization and Aggregation Engine</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="swiper-card">
+            <img src="img/evernia.png" alt="">
+            <div class='tag'>
+              <span>SMART AG</span>
+            </div>
+            <h3>Evernia Bio</h3>
+            <p>Soil microbial characterization solution based on computer vision and microscopy</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="swiper-card">
+            <img src="img/7chord.png" alt="">
+            <div class='tag'>
+              <span>FINTECH</span>
+            </div>
+            <h3>7 Chord LLC</h3>
+            <p>Data strategy for bond predictive pricing & trend forecasting apps</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="swiper-card">
+            <img src="img/sightwalk.png" alt="">
+            <div class='tag'>
+              <span>DATA VISUALIZATION</span>
+            </div>
+            <h3>Sightwalk</h3>
+            <p>Alternative routing app for city strolling</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="swiper-card">
+            <img src="img/liveperson.png" alt="">
+            <div class='tag'>
+              <span>ENTERPRISE SOFTWARE</span>
+            </div>
+            <h3>Liveperson</h3>
+            <p>HR Analytics. Performance - Hiring</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="swiper-card">
+            <img src="img/spliff.png" alt="">
+            <div class='tag'>
+              <span>MUSIC TECH</span>
+            </div>
+            <h3>SPLIFF</h3>
+            <p>Set list planner for DJs</p>
+          </div>
+        </div>
+      </div>
+      <!--
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".proj-swiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        // Responsive breakpoints   
+        breakpoints: {  
+          // when window width is <= 320px     
+          320: {       
+             slidesPerView: 1,
+          },
+          1150: {       
+             slidesPerView: 2,
+          },     
+          1450: {       
+             slidesPerView: 3,       
+          },
+          1750: {       
+             slidesPerView: 4,       
+          },   
+        } 
+
+      });
+    </script>
+  </section>
+
+  <section class="padding-block-700 block-dark-bg">
+    <div class='contact-container'>
+      <div>
+        <h2>
+          Feel free to reach out
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div class='contact-form-container'>
+        <h3>Leave us a message</h3>
+        <form>      
+          <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+          <input name="email" type="text" class="feedback-input" placeholder="Email" />
+          <input name="company" type="text" class="feedback-input" placeholder="Company" />
+          <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
+          <input class='button button-primary' type="submit" value="SUBMIT"/>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class='padding-block-600'>
+    <div>
+      <a class="logo" href="#">GOBY Lab</a>
+    </div>
+    <div>
+      <p>Copyright 2022. All Rights Reserved</p>
+    </div>
+  </footer>
+
+</body>
+</html>
