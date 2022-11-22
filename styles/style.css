@@ -287,8 +287,8 @@ footer {
 }
 .secondary-header-container p {
   font-weight: var(--fw-semi-bold);
-  padding-left: var(--size-2000);
-  padding-right: var(--size-2000);
+  padding-left: var(--size-200);
+  padding-right: var(--size-200);
   padding-bottom: var(--size-200);
 }
 
