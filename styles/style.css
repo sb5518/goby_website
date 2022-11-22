@@ -567,9 +567,11 @@ footer {
     background-image: none;
   }
 }
+/*
 @media (max-width: 50em) {
   .nav-list {
     display: grid;
   }
 }
+*/
 
