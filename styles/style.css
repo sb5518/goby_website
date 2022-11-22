@@ -561,6 +561,31 @@ footer {
     grid-template-columns: 1fr;
     row-gap: var(--size-200);
   }
+
+  .service-box-left {
+    grid-template-columns: 1fr;
+    row-gap: var(--size-600);
+  }
+  .service-box-left .service-image{
+    order: 1;
+  }
+  .service-box-left .service-description{
+    order: 2;
+  }
+  
+  .service-box-right {
+    grid-template-columns: 1fr;
+    row-gap: var(--size-600);
+  }
+    .service-box-right .service-image{
+    order: 1;
+  }
+    .service-box-right .service-description{
+    order: 2;
+  }
+
+
+
 }
 @media (max-width: 60em) {
     header {
