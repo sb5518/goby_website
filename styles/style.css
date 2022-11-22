@@ -562,6 +562,10 @@ footer {
     row-gap: var(--size-200);
   }
 
+  .service-box img {
+    width: 60%;
+  }
+
   .service-box-left {
     grid-template-columns: 1fr;
     row-gap: var(--size-600);
@@ -577,10 +581,10 @@ footer {
     grid-template-columns: 1fr;
     row-gap: var(--size-600);
   }
-    .service-box-right .service-image{
+  .service-box-right .service-image{
     order: 1;
   }
-    .service-box-right .service-description{
+  .service-box-right .service-description{
     order: 2;
   }
 
