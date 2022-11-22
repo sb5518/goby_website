@@ -137,7 +137,10 @@ svg {
 }
 
 body {
-  min-width: 60em;
+  /*min-width: 60rem;*/
+  min-width:1000px;
+  width: auto !important;
+  width:1000px;
 }
 
 a {
