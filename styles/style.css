@@ -192,6 +192,7 @@ section h1 {
   color: var(--clr-body-title);
   font-size: var(--fs-800);
   font-weight: var(--fw-extra-bold);
+  padding-bottom: var(--size-300);
 }
 section h2 {
   color: var(--clr-body-title);
@@ -308,6 +309,9 @@ footer h1 {
   font-size: var(--fs-subtitle);
   font-weight: var(--fw-bold);
 }
+.header-container a {
+  color: var(--clr-heading);
+}
 
 .secondary-header-container {
   padding-top: var(--size-700);
@@ -320,6 +324,12 @@ footer h1 {
   font-size: var(--fs-main-title);
   font-weight: var(--fw-extra-bold);
 }
+
+.secondary-header-container h2 {
+  font-size: var(--fs-body-title);
+  font-weight: var(--fw-bold);
+}
+
 .secondary-header-container p {
   font-weight: var(--fw-semi-bold);
   padding-left: var(--size-200);
@@ -444,6 +454,10 @@ footer h1 {
   grid-template-columns: 1fr 2fr;
   column-gap: var(--size-600);
 }
+.team-card {
+  align-items: start;
+}
+
 .project-card *{
   padding-bottom: var(--size-200);
 }
@@ -600,6 +614,7 @@ footer h1 {
     grid-template-columns: 1fr;
     row-gap:: var(--size-700);
   }
+
   .project-card {
     grid-template-columns: 1fr;
     row-gap: var(--size-200);
