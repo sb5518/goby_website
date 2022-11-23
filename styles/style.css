@@ -549,7 +549,15 @@ footer {
     display: grid;
     row-gap: 20px;
   }
+
+  section {
+    padding-right: var(--size-800);
+    padding-left: var(--size-800);  
+  }
+
   .cards-container {
+    padding-right:  var(--size-800);
+    padding-left:  var(--size-800);
     grid-template-columns: 1fr;
     row-gap: var(--size-400);
   }
