@@ -211,12 +211,47 @@ contact-form {
 footer {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--size-600);
+  /*
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  */
   background: var(--clr-bg-footer);
   color: var(--clr-footer);
   text-align: left;
   padding-right: var(--size-1000);
   padding-left: var(--size-1000);
 }
+
+footer h1 {
+  font-weight: var(--fw-extra-bold);
+  color: var(--clr-neutral-200);
+  padding-bottom: var(--size-200);
+}
+
+.copyright {
+  align-self: end;
+}
+
+.social-container {
+  padding-top: var(--size-200);
+  align-self: end;
+  height: 34px;
+  width: 34px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--size-700);
+  text-align: left;
+}
+
+.footer-nav a {
+  color: var(--clr-footer);
+}
+
 
 .logo {
   font-family: var(--ff-logo);
@@ -549,7 +584,15 @@ footer {
     display: grid;
     row-gap: 20px;
   }
+
+  section {
+    padding-right: var(--size-800);
+    padding-left: var(--size-800);  
+  }
+
   .cards-container {
+    padding-right:  var(--size-800);
+    padding-left:  var(--size-800);
     grid-template-columns: 1fr;
     row-gap: var(--size-400);
   }
