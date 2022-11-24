@@ -236,10 +236,12 @@ footer h1 {
 }
 
 .social-container {
+  display: flex;
+  gap: var(--size-300);
   padding-top: var(--size-200);
   align-self: end;
   height: 34px;
-  width: 34px;
+  width: 100px;
 }
 
 .footer-nav {
