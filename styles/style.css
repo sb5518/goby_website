@@ -459,6 +459,10 @@ footer h1 {
 .team-card {
   align-items: start;
 }
+.team-card a {
+  height: 34px;
+  width: 34px;
+}
 
 .project-card *{
   padding-bottom: var(--size-200);
