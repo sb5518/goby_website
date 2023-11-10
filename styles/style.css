@@ -49,6 +49,7 @@
   --fs-tag: var(--fs-200);
   --fs-footer: var(--fs-400);
 
+  --size-100: 0.75rem;
   --size-200: 1.25rem;
   --size-300: 1.875rem;
   --size-400: 2.188rem;
@@ -94,7 +95,9 @@ html:focus-within {
 html,
 body {
   height: 100%;
+  font-size: var(--fs-400);
 }
+
 
 /* Set core body defaults */
 body {
@@ -337,6 +340,14 @@ footer h1 {
   padding-left: var(--size-200);
   padding-right: var(--size-200);
   padding-bottom: var(--size-200);
+}
+
+.wall-of-text {
+  padding-left: var(--size-600);
+  padding-right: var(--size-600);
+}
+.wall-of-text p {
+  padding-bottom: var(--size-100);
 }
 
 .cards-container {
